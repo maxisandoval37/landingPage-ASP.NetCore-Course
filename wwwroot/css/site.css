@@ -1,0 +1,56 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #181a1B;
+    background-image: url("/imgs/background.jpg");
+    background-size: 100%;
+}
+
+#header_id {
+    background-color: #131516;
+}
+
+.pb-3 {
+    color:azure;
+}
+
+.div-descripcion-id {
+    margin: 2rem 0 8rem 0;
+}
+
+.div-descripcion-id h1 {
+    margin-bottom: 1rem;
+}
+
+.div-descripcion-id p {
+    font-family: 'Lucida Sans Unicode';
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.contenedor-columnas-id {
+    margin-top: -105px; /* Hace el efecto de incrustar un div dentro de otro */
+    background-color: #181a1B;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 0 gray;
+}
+
+/*Personalizamos el estilo de los iconos de bootstrap*/
+.style-bootstrap-icons {
+    font-size: 25px;
+    color: #0d6efd;
+}
