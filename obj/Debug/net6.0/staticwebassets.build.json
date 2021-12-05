@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "//PsuDTrM970y5Y6lzo86DYDPvxHKuLgcRDnGgIlMVg=",
+  "Hash": "VxYpg0/yi9fvms66hqSxhu4hAtigGCrvr+ho4eP2NB8=",
   "Source": "landingPage",
   "BasePath": "_content/landingPage",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\layout.css"
+    },
+    {
+      "Identity": "C:\\Users\\MX37S\\source\\repos\\landingPage\\landingPage\\wwwroot\\css\\season.css",
+      "SourceId": "landingPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MX37S\\source\\repos\\landingPage\\landingPage\\wwwroot\\",
+      "BasePath": "_content/landingPage",
+      "RelativePath": "css/season.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\season.css"
     },
     {
       "Identity": "C:\\Users\\MX37S\\source\\repos\\landingPage\\landingPage\\wwwroot\\css\\site.css",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\police-home-page.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\MX37S\\source\\repos\\landingPage\\landingPage\\wwwroot\\imgs\\seasons\\temp6.jpg",
+      "SourceId": "landingPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MX37S\\source\\repos\\landingPage\\landingPage\\wwwroot\\",
+      "BasePath": "_content/landingPage",
+      "RelativePath": "imgs/seasons/temp6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\seasons\\temp6.jpg"
     },
     {
       "Identity": "C:\\Users\\MX37S\\source\\repos\\landingPage\\landingPage\\wwwroot\\js\\site.js",

@@ -2,7 +2,7 @@
 {
     public class HomeIndexDTO
     {
-        public IEnumerable<ProyectoDTO> ProyectosList { get; set; }
+        public IEnumerable<ProyectoDTO>? ProyectosList { get; set; }
 
     }
 }
