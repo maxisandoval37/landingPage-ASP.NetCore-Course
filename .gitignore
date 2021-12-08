@@ -1,3 +1,6 @@
+*.dll
+*.sentinel
+*.pdb
 *.swp
 *.*~
 project.lock.json
