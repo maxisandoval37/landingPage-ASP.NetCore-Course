@@ -8,9 +8,9 @@ namespace landingPage.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IRepositorioProyectos _repositorioProyectos;
+        private readonly IRepositorioTemporadas _repositorioProyectos;
 
-        public HomeController(ILogger<HomeController> logger, IRepositorioProyectos repositorioProyectos)
+        public HomeController(ILogger<HomeController> logger, IRepositorioTemporadas repositorioProyectos)
         {
             _logger = logger;
             _repositorioProyectos = repositorioProyectos;
@@ -23,6 +23,7 @@ namespace landingPage.Controllers
                 Nombre = "Negan",
                 Kills = 138
             };
+            _logger.LogInformation("Vista Index cargada correctamente");
             return View("Index", personaje);
         }
 
@@ -33,8 +34,8 @@ namespace landingPage.Controllers
 
         public IActionResult Season()
         {
-            var proyectos = _repositorioProyectos.ObtenerProyectos().Take(3).ToList();
-            var modelo = new HomeIndexDTO() { ProyectosList = proyectos };
+            var proyectos = _repositorioProyectos.ObtenerProyectos().ToList();
+            var modelo = new HomeIndexDTO() { TemporadasList = proyectos };
             return View(modelo);
         }
 

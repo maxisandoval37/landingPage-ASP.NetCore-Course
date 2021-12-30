@@ -1,6 +1,6 @@
 ﻿namespace landingPage.Models
 {
-    public class ProyectoDTO
+    public class TemporadaDTO
     {
         public string?  Titulo { get; set; }
         public string? Descripcion { get; set; }

@@ -5,19 +5,18 @@
 
 @model HomeIndexDTO
 
-@if (Model.ProyectosList is not null)
+@if (Model.TemporadasList is not null)
 {
-    <div class="text-center" style="padding-top: 6rem;">
+    <div class="text-center" style="padding-top: 2rem;">
         <h1>Lista de temporadas</h1>
         <p>Estas son las temporadas en las que Negan hizo su aparición</p>
     </div>
 
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach (var p in Model.ProyectosList)
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            @foreach (var p in Model.TemporadasList)
             {
-                <!--El h-100 es para que todas las tarjetas que tengamos sean del mismo tamaño-->
-                <div class="card h-100 text-center">
+                <div class="card h-100 text-center offset-md-1 offset-sm-1">
                     <img src="@p.ImagenURL" class="card-img-top" alt="imagen de temporada"/>
                     <div class="card-body">
                         <h5 class="card-title season-h5"><b>@p.Titulo</b></h5>
