@@ -44,6 +44,13 @@ namespace landingPage.Controllers
             return View();
         }
 
+        [HttpPost]//Esta acción se va a realizar cuando recibamos atributos de la vista
+        public IActionResult Contact(ContactoDTO contactoDTO)
+        {
+            _logger.LogInformation(contactoDTO.ToString());
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
