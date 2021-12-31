@@ -48,6 +48,11 @@ namespace landingPage.Controllers
         public IActionResult Contact(ContactoDTO contactoDTO)
         {
             _logger.LogInformation(contactoDTO.ToString());
+            return RedirectToAction("Thanks");
+        }
+
+        public IActionResult Thanks()
+        {
             return View();
         }
 
