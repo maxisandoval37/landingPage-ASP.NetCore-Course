@@ -5,6 +5,7 @@
 <ul>
   <li>HTML5-CSS-JS</li>
   <li>BOOTSTRAP</li>
+  <li>RAZOR</li>
   <li>C#</li>
   <li>ASP.NET Core MVC 6</li>
 </ul>
