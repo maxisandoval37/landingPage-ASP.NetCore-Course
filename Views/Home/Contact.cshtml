@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+    Console.WriteLine("Estoy en Contact.cshtml");
+}
+
+<div class="container space_padding">
+
+    <h1>Formulario de Contacto</h1>
+
+    <form asp-controller="Home" asp-action="Contact">
+        <!--mb: margin bottom-->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre"/>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email"/>
+        </div>
+
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea type="mensaje" class="form-control" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" rows=9></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="alert('Mensaje enviado')">Enviar</button>
+    </form>
+
+</div>

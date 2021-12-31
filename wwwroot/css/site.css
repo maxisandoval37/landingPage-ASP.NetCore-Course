@@ -54,3 +54,7 @@ body {
     font-size: 25px;
     color: #0d6efd;
 }
+
+.space_padding {
+    padding-top: 2rem;
+}
