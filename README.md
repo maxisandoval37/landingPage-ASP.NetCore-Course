@@ -9,3 +9,10 @@
   <li>C#</li>
   <li>ASP.NET Core MVC 6</li>
 </ul>
+
+<h2>Appsettings: SendGrid Email configuration</h2>
+<ul>
+  <li>"SENDGRID_API_KEY": "YOUR API KEY",</li>
+  <li>"SENDGRID_FROM": "YOUR EMAIL ADDRESS",</li>
+  <li>"SENDGRID_NOMBRE": "YOUR NAME",</li>
+</ul>
