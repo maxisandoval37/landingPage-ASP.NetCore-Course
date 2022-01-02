@@ -9,11 +9,15 @@ namespace landingPage.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IRepositorioTemporadas _repositorioProyectos;
+        private readonly IServicioEmail _servicioEmail;
 
-        public HomeController(ILogger<HomeController> logger, IRepositorioTemporadas repositorioProyectos)
+        public HomeController(ILogger<HomeController> logger, 
+            IRepositorioTemporadas repositorioProyectos, 
+            IServicioEmail servicioEmail)
         {
             _logger = logger;
             _repositorioProyectos = repositorioProyectos;
+            _servicioEmail = servicioEmail;
         }
 
         public IActionResult Index()
@@ -45,9 +49,10 @@ namespace landingPage.Controllers
         }
 
         [HttpPost]//Esta acción se va a realizar cuando recibamos atributos de la vista
-        public IActionResult Contact(ContactoDTO contactoDTO)
+        public async Task<IActionResult> Contact(ContactoDTO contactoDTO)
         {
             _logger.LogInformation(contactoDTO.ToString());
+            await _servicioEmail.Enviar(contactoDTO);
             return RedirectToAction("Thanks");
         }
 
